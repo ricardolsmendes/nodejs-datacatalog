@@ -31,8 +31,6 @@ function sampleLookupEntry(sqlName) {
       console.log(`Entry name: ${entry.name}`);
       console.log(`Entry type: ${entry.type}`);
       console.log(`Linked resource: ${entry.linkedResource}`);
-      console.log(`Display name: ${entry.displayName}`);
-      console.log(`Description: ${entry.description}`);
     })
     .catch(err => {
       console.error(err);
