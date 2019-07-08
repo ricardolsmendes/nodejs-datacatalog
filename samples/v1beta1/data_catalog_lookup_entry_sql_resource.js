@@ -16,8 +16,8 @@ const datacatalog = require('@google-cloud/datacatalog').v1beta1;
  * @param sqlName {string} The SQL name of the Google Cloud Platform resource the Data Catalog entry
  * represents.
  * Examples:
- * bigquery.table.`projectId`.`datasetId`.`tableId`
- * pubsub.topic.`projectId`.`topicId`
+ * bigquery.table.`bigquery-public-data`.`new_york_taxi_trips`.`taxi_zone_geom`
+ * pubsub.topic.`pubsub-public-data`.`taxirides-realtime`
  */
 function sampleLookupEntry(sqlName) {
   const client = new datacatalog.DataCatalogClient();
