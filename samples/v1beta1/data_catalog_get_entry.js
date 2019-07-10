@@ -27,7 +27,7 @@ function sampleGetEntry(projectId, locationId, entryGroupId, entryId) {
   const formattedName = client.entryPath(
     projectId,
     locationId,
-    `@${entryGroupId}`,
+    entryGroupId,
     entryId
   );
   client
