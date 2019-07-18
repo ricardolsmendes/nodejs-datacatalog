@@ -1,12 +1,12 @@
-// DO NOT EDIT! This is a generated sample ("Request",  "data_catalog_get_entry")
+// DO NOT EDIT! This is a generated sample ("Request",  "datacatalog_get_entry")
 'use strict';
 
 // sample-metadata:
 //   title:
 //   description: Get Entry
-//   usage: node samples/v1beta1/data_catalog_get_entry.js [--project_id "[Google Cloud Project ID]"] [--location_id "[Google Cloud Location ID]"] [--entry_group_id "[Entry Group ID]"] [--entry_id "[Entry ID]"]
+//   usage: node samples/v1beta1/datacatalog_get_entry.js [--project_id "[Google Cloud Project ID]"] [--location_id "[Google Cloud Location ID]"] [--entry_group_id "[Entry Group ID]"] [--entry_id "[Entry ID]"]
 
-// [START data_catalog_get_entry]
+// [START datacatalog_get_entry]
 
 const datacatalog = require('@google-cloud/datacatalog').v1beta1;
 
@@ -15,7 +15,7 @@ const datacatalog = require('@google-cloud/datacatalog').v1beta1;
  *
  * @param projectId {string} Your Google Cloud project ID
  * @param locationId {string} Google Cloud region, e.g. us-central1
- * @param entryGroupId {string} ID of the Entry Group of this entry
+ * @param entryGroupId {string} ID of the Entry Group, e.g. @bigquery, @pubsub
  * @param entryId {string} ID of the Entry
  */
 function sampleGetEntry(projectId, locationId, entryGroupId, entryId) {
@@ -44,7 +44,7 @@ function sampleGetEntry(projectId, locationId, entryGroupId, entryId) {
     });
 }
 
-// [END data_catalog_get_entry]
+// [END datacatalog_get_entry]
 // tslint:disable-next-line:no-any
 
 const argv = require(`yargs`)
