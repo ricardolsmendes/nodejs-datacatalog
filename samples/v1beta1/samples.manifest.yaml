@@ -1,0 +1,10 @@
+version: 2
+sets:
+- environment: nodejs
+  bin: node
+  path: /Users/loricardo/work/projects/data-catalog/nodejs-datacatalog/
+  __items__:
+  - path: samples/v1beta1/datacatalog_get_entry.js
+    sample: datacatalog_get_entry
+  - path: samples/v1beta1/datacatalog_lookup_entry.js
+    sample: datacatalog_lookup_entry
