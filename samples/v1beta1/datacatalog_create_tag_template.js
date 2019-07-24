@@ -1,12 +1,12 @@
-// DO NOT EDIT! This is a generated sample ("Request",  "data_catalog_create_tag_template")
+// DO NOT EDIT! This is a generated sample ("Request",  "datacatalog_create_tag_template")
 'use strict';
 
 // sample-metadata:
 //   title:
 //   description: Create Tag Template
-//   usage: node samples/v1beta1/data_catalog_create_tag_template.js [--project_id "[Google Cloud Project ID]"] [--location_id "[Google Cloud Location ID]"]
+//   usage: node samples/v1beta1/datacatalog_create_tag_template.js [--project_id "[Google Cloud Project ID]"] [--location_id "[Google Cloud Location ID]"]
 
-// [START data_catalog_create_tag_template]
+// [START datacatalog_create_tag_template]
 
 const datacatalog = require('@google-cloud/datacatalog').v1beta1;
 
@@ -22,7 +22,7 @@ function sampleCreateTagTemplate(projectId, locationId) {
   // const locationId = '[Google Cloud Location ID]';
   const formattedParent = client.locationPath(projectId, locationId);
 
-  // Tag Template ID.
+  // The Tag Template ID.
   const tagTemplateId = 'sample_tag_template';
   const displayName = 'Sample Tag Template';
   const displayName2 = 'Source of data asset';
@@ -101,14 +101,14 @@ function sampleCreateTagTemplate(projectId, locationId) {
     .createTagTemplate(request)
     .then(responses => {
       const response = responses[0];
-      console.log(`Template name: ${response.name}`);
+      console.log(`Tag Template name: ${response.name}`);
     })
     .catch(err => {
       console.error(err);
     });
 }
 
-// [END data_catalog_create_tag_template]
+// [END datacatalog_create_tag_template]
 // tslint:disable-next-line:no-any
 
 const argv = require(`yargs`)
