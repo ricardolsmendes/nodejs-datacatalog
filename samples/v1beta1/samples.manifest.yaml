@@ -4,5 +4,5 @@ sets:
   bin: node
   path: /Users/loricardo/work/projects/data-catalog/nodejs-datacatalog/
   __items__:
-  - path: samples/v1beta1/data_catalog_search.js
-    sample: data_catalog_search
+  - path: samples/v1beta1/datacatalog_search.js
+    sample: datacatalog_search

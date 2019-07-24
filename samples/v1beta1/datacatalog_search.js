@@ -1,12 +1,12 @@
-// DO NOT EDIT! This is a generated sample ("RequestAsyncPagedAll",  "data_catalog_search")
+// DO NOT EDIT! This is a generated sample ("RequestAsyncPagedAll",  "datacatalog_search")
 'use strict';
 
 // sample-metadata:
 //   title:
 //   description: Search Catalog
-//   usage: node samples/v1beta1/data_catalog_search.js [--include_project_id "[Google Cloud Project ID]"] [--include_gcp_public_datasets False] [--query "[String in search query syntax]"]
+//   usage: node samples/v1beta1/datacatalog_search.js [--include_project_id "[Google Cloud Project ID]"] [--include_gcp_public_datasets false] [--query "[String in search query syntax]"]
 
-// [START data_catalog_search]
+// [START datacatalog_search]
 
 const datacatalog = require('@google-cloud/datacatalog').v1beta1;
 
@@ -17,6 +17,8 @@ const datacatalog = require('@google-cloud/datacatalog').v1beta1;
  * @param includeGcpPublicDatasets {boolean} If true, include Google Cloud Platform (GCP) public
  * datasets in the search results.
  * @param query {string} Your query string.
+ * See: https://cloud.google.com/data-catalog/docs/how-to/search-reference
+ * Example: system=bigquery type=dataset
  */
 function sampleSearchCatalog(
   includeProjectId,
@@ -54,7 +56,7 @@ function sampleSearchCatalog(
     });
 }
 
-// [END data_catalog_search]
+// [END datacatalog_search]
 // tslint:disable-next-line:no-any
 
 const argv = require(`yargs`)
