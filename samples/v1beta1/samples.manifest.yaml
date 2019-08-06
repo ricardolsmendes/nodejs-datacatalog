@@ -1,0 +1,10 @@
+version: 2
+sets:
+- environment: nodejs
+  bin: node
+  path: /Users/loricardo/work/projects/data-catalog/nodejs-datacatalog/
+  __items__:
+  - path: samples/v1beta1/datacatalog_create_tag_template.js
+    sample: datacatalog_create_tag_template
+  - path: samples/v1beta1/datacatalog_delete_tag_template.js
+    sample: datacatalog_delete_tag_template
